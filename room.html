@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Available Rooms</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_drop_down"
+    />
+    
+  </head>
+  <body>
+    <div class="main">
+      <div class="upper-main">
+        <h1>Tech Coders</h1>
+        <p>
+          <a href="">Login</a>
+          /
+          <a href="">Logout</a>
+        </p>
+      </div>
+      <div class="lower-main">
+        <div class="lower-main-left">
+          <ul class="table-row">
+            <li class="li">
+              <a href="doctor.html">
+                Add Doctor
+                <span class="material-symbols-outlined"> arrow_drop_down </span>
+              </a>
+            </li>
+            <li class="li">
+              <a href="room.html">
+                Room Available
+                <span class="material-symbols-outlined"> arrow_drop_down </span>
+              </a>
+            </li>
+            <li class="li">
+              <a href="offer.html">
+                Offer
+                <span class="material-symbols-outlined"> arrow_drop_down </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="lower-main-right room-allocation-table">
+            <h2>Room Available</h2>
+            <div class="lower-main-upper">
+                <div class="lower-main-upper-left">
+
+                    <span>Show</span>
+                    <div class="drop-down">
+                        <h3>
+                            <span>10</span>
+                            <span class="material-symbols-outlined"> arrow_drop_down </span>
+    
+                        </h3>
+                        <div class="box">
+
+                        </div>
+                    </div>
+                    <span>entries</span>
+                </div>
+                <div class="lower-main-upper-right">
+                    <span>Search</span>
+                    <input type="text">
+                </div>
+
+            </div>
+            <div class="lower-main-lower">
+                <form action="" class="form">
+                    <div class="room-type form-comp">
+                        <label for="room-type">
+                            Room Type
+                        </label>
+                        <input type="text" id="room-type" name="room-type">
+                      <div class="drop-box-option">
+                        <ul class="table-row">
+                            
+                        </ul>
+
+                      </div>  
+
+
+                    </div>
+                    <div class="specialization form-comp">
+                        <label for="room-no">
+                            Room Number
+                        </label>
+                        <input type="number" id="room-no" name="room-no">
+    
+                    </div>
+                    <div class="phone form-comp">
+                        <label for="price">
+                            Price Per-day
+                        </label>
+                        <input type="number" id="price" name="price">
+                        
+    
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="option1" name="options" value="Option 1" class="radio-input">
+                        <label for="option1" class="radio-label">AC room</label>
+                        
+                        <input type="radio" id="option2" name="options" value="Option 2" class="radio-input">
+                        <label for="option2" class="radio-label">Non-AC room</label>
+                      </div>
+                      
+                   
+                      
+                    <div class="desc form-comp">
+                        <label for="desc">
+                            Description
+                        </label>
+                        <textarea name="desc" id="desc"></textarea>
+                        
+                    </div>
+
+                    <button>Allot Room</button>
+                    
+
+                </form>
+
+                
+
+
+            </div>
+
+            <div class="allocation-table">
+
+                <div class="table-head">
+                    <h1>Room Type</h1>
+                    <h1>Total Rooms</h1>
+                    <h1>Alloted Rooms</h1>
+                    <h1>Available Rooms</h1>
+
+                </div>
+                <hr>
+                <div class="table-body">
+                    <ul class="table-row row-type">
+                        <li class="li">Single Bed</li>
+                        <li class="li">Double Bed</li>
+                        <li class="li">Deluxe</li>
+                        <li class="li">Suite</li>
+                        <li class="li">Dormitory</li>
+                    </ul>
+                    <ul class="table-row row-total">
+                        <li class="li">70</li>
+                        <li class="li">40</li>
+                        <li class="li">30</li>
+                        <li class="li">20</li>
+                        <li class="li">10</li>
+                    </ul>
+                    <ul class="table-row row-alloted">
+                        <li class="li">10</li>
+                        <li class="li">7</li>
+                        <li class="li">3</li>
+                        <li class="li">2</li>
+                        <li class="li">10</li>
+                    </ul>
+                    <ul class="table-row row-available">
+                        <li class="li">70</li>
+                        <li class="li">40</li>
+                        <li class="li">30</li>
+                        <li class="li">20</li>
+                        <li class="li">10</li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
